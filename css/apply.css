@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+p,
+li {
+  font-size: 90%;
+}
+
+.content {
+  width: 800px;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-group {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab {
+  border: 1px darkgray solid;
+  padding: 5px;
+  width: 100px;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: small;
+  transition: border-radius 0.4s ease, background-color 0.5s linear;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: rgb(98, 173, 243);
+  border-radius: 10px;
+}
+
+.stafftype {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.accordion {
+  width: 100%;
+  border-top: 1px solid rgb(179, 179, 179);
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.accordion_head {
+  cursor: pointer;
+}
+
+.accordion_inner {
+  display: none;
+}
+
+.left-blue {
+  padding: 5px;
+  padding-left: 8px;
+  border-left: 2px #0261ff solid;
+}
+
+.menubar {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+.open .menubar {
+  background-image: url("../img/minus.png");
+}
